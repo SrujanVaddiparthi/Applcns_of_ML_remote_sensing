@@ -1,0 +1,31 @@
+{
+    "arch": "arm64",
+    "build": "py312h9b24f82_0",
+    "build_number": 0,
+    "channel": "https://conda.anaconda.org/conda-forge",
+    "depends": [
+        "__osx >=11.0",
+        "fmt >=11.1.4,<11.2.0a0",
+        "libcxx >=18",
+        "libmamba 2.1.1 h7c3736b_0",
+        "openssl >=3.5.0,<4.0a0",
+        "pybind11-abi 4",
+        "python >=3.12,<3.13.0a0",
+        "python >=3.12,<3.13.0a0 *_cpython",
+        "python_abi 3.12.* *_cp312",
+        "yaml-cpp >=0.8.0,<0.9.0a0",
+        "zstd >=1.5.7,<1.6.0a0"
+    ],
+    "fn": "libmambapy-2.1.1-py312h9b24f82_0.conda",
+    "license": "BSD-3-Clause",
+    "license_family": "BSD",
+    "md5": "5d65565218e50c5702e15e41d8aa9f97",
+    "name": "libmambapy",
+    "platform": "osx",
+    "sha256": "f25eb033b4a6109486e266f719f882db7035a729df6457ea675b1af70216ea6c",
+    "size": 536718,
+    "subdir": "osx-arm64",
+    "timestamp": 1746518408731,
+    "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libmambapy-2.1.1-py312h9b24f82_0.conda",
+    "version": "2.1.1"
+}

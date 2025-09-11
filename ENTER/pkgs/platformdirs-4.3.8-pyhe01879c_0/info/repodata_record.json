@@ -1,0 +1,21 @@
+{
+    "build": "pyhe01879c_0",
+    "build_number": 0,
+    "channel": "https://conda.anaconda.org/conda-forge",
+    "depends": [
+        "python >=3.9",
+        "python"
+    ],
+    "fn": "platformdirs-4.3.8-pyhe01879c_0.conda",
+    "license": "MIT",
+    "license_family": "MIT",
+    "md5": "424844562f5d337077b445ec6b1398a7",
+    "name": "platformdirs",
+    "noarch": "python",
+    "sha256": "0f48999a28019c329cd3f6fd2f01f09fc32cc832f7d6bbe38087ddac858feaa3",
+    "size": 23531,
+    "subdir": "noarch",
+    "timestamp": 1746710438805,
+    "url": "https://conda.anaconda.org/conda-forge/noarch/platformdirs-4.3.8-pyhe01879c_0.conda",
+    "version": "4.3.8"
+}

@@ -1,0 +1,16 @@
+{
+  "arch": "arm64",
+  "build": "h4237e3c_1",
+  "build_number": 1,
+  "depends": [
+    "__osx >=11.0",
+    "icu >=75.1,<76.0a0",
+    "libzlib >=1.3.1,<2.0a0"
+  ],
+  "license": "blessing",
+  "name": "libsqlite",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1753262833682,
+  "version": "3.50.3"
+}

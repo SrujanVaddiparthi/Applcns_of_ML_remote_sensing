@@ -1,0 +1,63 @@
+{
+    "arch": "arm64",
+    "build": "h105ca85_0",
+    "build_number": 0,
+    "channel": "https://conda.anaconda.org/conda-forge",
+    "depends": [
+        "__osx >=11.0",
+        "libcxx >=18",
+        "libmamba 2.1.1 h7c3736b_0",
+        "reproc >=14.2,<15.0a0",
+        "reproc-cpp >=14.2,<15.0a0",
+        "zstd >=1.5.7,<1.6.0a0"
+    ],
+    "extracted_package_dir": "/Users/wangtiles/Applcns_of_ML_remote_sensing/ENTER/pkgs/mamba-2.1.1-h105ca85_0",
+    "files": [
+        "bin/mamba",
+        "condabin/mamba",
+        "etc/profile.d/mamba.sh"
+    ],
+    "fn": "mamba-2.1.1-h105ca85_0.conda",
+    "license": "BSD-3-Clause",
+    "license_family": "BSD",
+    "link": {
+        "source": "/Users/wangtiles/Applcns_of_ML_remote_sensing/ENTER/pkgs/mamba-2.1.1-h105ca85_0",
+        "type": 1
+    },
+    "md5": "ef829dc43050c9a61e65b8103d56ff10",
+    "name": "mamba",
+    "package_tarball_full_path": "/Users/wangtiles/Applcns_of_ML_remote_sensing/ENTER/pkgs/mamba-2.1.1-h105ca85_0.tar.bz2",
+    "paths_data": {
+        "paths": [
+            {
+                "_path": "bin/mamba",
+                "path_type": "hardlink",
+                "sha256": "70ef9f1fe3e2469b3b28540edfe418f1e08923156431523969409ad7137541bb",
+                "sha256_in_prefix": "70ef9f1fe3e2469b3b28540edfe418f1e08923156431523969409ad7137541bb",
+                "size_in_bytes": 1529184
+            },
+            {
+                "_path": "condabin/mamba",
+                "path_type": "softlink",
+                "sha256_in_prefix": "70ef9f1fe3e2469b3b28540edfe418f1e08923156431523969409ad7137541bb",
+                "size_in_bytes": 1529184
+            },
+            {
+                "_path": "etc/profile.d/mamba.sh",
+                "path_type": "hardlink",
+                "sha256": "ac106c09c664309ec41ad27672805ada19b7551f943589b48abdc65363dc2097",
+                "sha256_in_prefix": "3d9bf3c6f34cf08434ea18c1d0ed28147d83beae3e53420c4c9542969c7e70f7",
+                "size_in_bytes": 2848
+            }
+        ],
+        "paths_version": 1
+    },
+    "platform": "osx",
+    "requested_spec": "mamba==2.1.1=h105ca85_0",
+    "sha256": "365ba94ffc4a9a22c821c14eb37af10868339f4db96ba6763081f22a5eb1c9a8",
+    "size": 364625,
+    "subdir": "osx-arm64",
+    "timestamp": 1746519383854,
+    "url": "https://conda.anaconda.org/conda-forge/osx-arm64/mamba-2.1.1-h105ca85_0.conda",
+    "version": "2.1.1"
+}

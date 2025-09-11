@@ -1,0 +1,17 @@
+{
+  "paths": [
+    {
+      "_path": "lib/libexpat.1.10.2.dylib",
+      "path_type": "hardlink",
+      "sha256": "b2f50d2347273ec2bcdbf55471a2c484a34b22bdc57f7fae9e38da7c9af3db26",
+      "size_in_bytes": 182480
+    },
+    {
+      "_path": "lib/libexpat.1.dylib",
+      "path_type": "softlink",
+      "sha256": "b2f50d2347273ec2bcdbf55471a2c484a34b22bdc57f7fae9e38da7c9af3db26",
+      "size_in_bytes": 182480
+    }
+  ],
+  "paths_version": 1
+}

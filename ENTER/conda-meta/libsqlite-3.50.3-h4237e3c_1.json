@@ -1,0 +1,82 @@
+{
+    "arch": "arm64",
+    "build": "h4237e3c_1",
+    "build_number": 1,
+    "channel": "https://conda.anaconda.org/conda-forge",
+    "depends": [
+        "__osx >=11.0",
+        "icu >=75.1,<76.0a0",
+        "libzlib >=1.3.1,<2.0a0"
+    ],
+    "extracted_package_dir": "/Users/wangtiles/Applcns_of_ML_remote_sensing/ENTER/pkgs/libsqlite-3.50.3-h4237e3c_1",
+    "files": [
+        "include/sqlite3.h",
+        "include/sqlite3ext.h",
+        "lib/libsqlite3.0.dylib",
+        "lib/libsqlite3.3.50.3.dylib",
+        "lib/libsqlite3.dylib",
+        "lib/pkgconfig/sqlite3.pc"
+    ],
+    "fn": "libsqlite-3.50.3-h4237e3c_1.conda",
+    "license": "blessing",
+    "link": {
+        "source": "/Users/wangtiles/Applcns_of_ML_remote_sensing/ENTER/pkgs/libsqlite-3.50.3-h4237e3c_1",
+        "type": 1
+    },
+    "md5": "6d034f4604ac104a1256204af7d1a534",
+    "name": "libsqlite",
+    "package_tarball_full_path": "/Users/wangtiles/Applcns_of_ML_remote_sensing/ENTER/pkgs/libsqlite-3.50.3-h4237e3c_1.tar.bz2",
+    "paths_data": {
+        "paths": [
+            {
+                "_path": "include/sqlite3.h",
+                "path_type": "hardlink",
+                "sha256": "cca50ac4a1326697f34a4f99835374d326db17b5890cfab7cf5704d46ca6cc87",
+                "sha256_in_prefix": "cca50ac4a1326697f34a4f99835374d326db17b5890cfab7cf5704d46ca6cc87",
+                "size_in_bytes": 661968
+            },
+            {
+                "_path": "include/sqlite3ext.h",
+                "path_type": "hardlink",
+                "sha256": "9a91de0d5e5ccc04ec59041275c67972d6f8894f7543a10033e387b69987beb5",
+                "sha256_in_prefix": "9a91de0d5e5ccc04ec59041275c67972d6f8894f7543a10033e387b69987beb5",
+                "size_in_bytes": 38321
+            },
+            {
+                "_path": "lib/libsqlite3.0.dylib",
+                "path_type": "softlink",
+                "sha256_in_prefix": "f857b1d33e92ec52be7c67def1ee3bf2ec442d598a69f11f8f5de1f4117867e7",
+                "size_in_bytes": 1730560
+            },
+            {
+                "_path": "lib/libsqlite3.3.50.3.dylib",
+                "path_type": "hardlink",
+                "sha256": "f857b1d33e92ec52be7c67def1ee3bf2ec442d598a69f11f8f5de1f4117867e7",
+                "sha256_in_prefix": "f857b1d33e92ec52be7c67def1ee3bf2ec442d598a69f11f8f5de1f4117867e7",
+                "size_in_bytes": 1730560
+            },
+            {
+                "_path": "lib/libsqlite3.dylib",
+                "path_type": "softlink",
+                "sha256_in_prefix": "f857b1d33e92ec52be7c67def1ee3bf2ec442d598a69f11f8f5de1f4117867e7",
+                "size_in_bytes": 1730560
+            },
+            {
+                "_path": "lib/pkgconfig/sqlite3.pc",
+                "path_type": "hardlink",
+                "sha256": "23b7798cda8d3fae0995ca49f2f7a6909b3c8c80426f540fee8659dec9ce8555",
+                "sha256_in_prefix": "3d9bf3c6f34cf08434ea18c1d0ed28147d83beae3e53420c4c9542969c7e70f7",
+                "size_in_bytes": 1075
+            }
+        ],
+        "paths_version": 1
+    },
+    "platform": "osx",
+    "requested_spec": "libsqlite==3.50.3=h4237e3c_1",
+    "sha256": "248ba9622ee91c3ae1266f7b69143adf5031e1f2d94b6d02423e192e47531697",
+    "size": 902818,
+    "subdir": "osx-arm64",
+    "timestamp": 1753262833682,
+    "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libsqlite-3.50.3-h4237e3c_1.conda",
+    "version": "3.50.3"
+}

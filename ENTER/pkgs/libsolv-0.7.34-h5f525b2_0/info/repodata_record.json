@@ -1,0 +1,23 @@
+{
+    "arch": "arm64",
+    "build": "h5f525b2_0",
+    "build_number": 0,
+    "channel": "https://conda.anaconda.org/conda-forge",
+    "depends": [
+        "libcxx >=19",
+        "__osx >=11.0",
+        "libzlib >=1.3.1,<2.0a0"
+    ],
+    "fn": "libsolv-0.7.34-h5f525b2_0.conda",
+    "license": "BSD-3-Clause",
+    "license_family": "BSD",
+    "md5": "0aee957ebe46ff715490b290ed0aa7a6",
+    "name": "libsolv",
+    "platform": "osx",
+    "sha256": "6943df8a72bc617cbad8db73e3a204cf3bd1f222fbd2f232ccd392031361fead",
+    "size": 427761,
+    "subdir": "osx-arm64",
+    "timestamp": 1752581943883,
+    "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libsolv-0.7.34-h5f525b2_0.conda",
+    "version": "0.7.34"
+}

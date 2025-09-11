@@ -1,0 +1,22 @@
+{
+    "arch": "arm64",
+    "build": "h892fb3f_2",
+    "build_number": 2,
+    "channel": "https://conda.anaconda.org/conda-forge",
+    "depends": [
+        "__osx >=11.0",
+        "libzlib >=1.3.1,<2.0a0"
+    ],
+    "fn": "tk-8.6.13-h892fb3f_2.conda",
+    "license": "TCL",
+    "license_family": "BSD",
+    "md5": "7362396c170252e7b7b0c8fb37fe9c78",
+    "name": "tk",
+    "platform": "osx",
+    "sha256": "cb86c522576fa95c6db4c878849af0bccfd3264daf0cc40dd18e7f4a7bfced0e",
+    "size": 3125538,
+    "subdir": "osx-arm64",
+    "timestamp": 1748388189063,
+    "url": "https://conda.anaconda.org/conda-forge/osx-arm64/tk-8.6.13-h892fb3f_2.conda",
+    "version": "8.6.13"
+}

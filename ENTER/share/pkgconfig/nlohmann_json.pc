@@ -1,0 +1,4 @@
+Name: nlohmann_json
+Description: JSON for Modern C++
+Version: 3.11.3
+Cflags: -I/Users/wangtiles/Applcns_of_ML_remote_sensing/ENTER/include

@@ -1,0 +1,16 @@
+{
+  "arch": "arm64",
+  "build": "h440487c_1",
+  "build_number": 1,
+  "depends": [
+    "__osx >=11.0",
+    "libcxx >=18"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "name": "fmt",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1742833557859,
+  "version": "11.1.4"
+}

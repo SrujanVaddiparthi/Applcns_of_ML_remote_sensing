@@ -1,0 +1,21 @@
+{
+    "arch": "arm64",
+    "build": "h177bc72_1",
+    "build_number": 1,
+    "channel": "https://conda.anaconda.org/conda-forge",
+    "depends": [
+        "__osx >=11.0",
+        "libcxx >=18"
+    ],
+    "fn": "cpp-expected-1.1.0-h177bc72_1.conda",
+    "license": "CC0-1.0",
+    "md5": "05692bdc7830e860bd32652fa7857705",
+    "name": "cpp-expected",
+    "platform": "osx",
+    "sha256": "a41d97157e628947d13bf5920bf0d533f81b8a3ed68dbe4171149f522e99eae6",
+    "size": 24791,
+    "subdir": "osx-arm64",
+    "timestamp": 1745308950557,
+    "url": "https://conda.anaconda.org/conda-forge/osx-arm64/cpp-expected-1.1.0-h177bc72_1.conda",
+    "version": "1.1.0"
+}

@@ -1,0 +1,5 @@
+#!/Users/wangtiles/Applcns_of_ML_remote_sensing/ENTER/bin/python3.12
+
+import pydoc
+if __name__ == '__main__':
+    pydoc.cli()

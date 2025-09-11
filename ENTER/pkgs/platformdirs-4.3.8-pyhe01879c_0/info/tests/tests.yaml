@@ -1,0 +1,12 @@
+- python:
+    imports:
+    - platformdirs
+    python_version:
+    - 3.9.*
+    - 3.13.*
+- script:
+    content: mypy -p platformdirs --ignore-missing-imports
+  requirements:
+    run:
+    - mypy
+    - python 3.9.*

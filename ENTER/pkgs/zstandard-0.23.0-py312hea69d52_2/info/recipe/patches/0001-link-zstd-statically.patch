@@ -1,0 +1,22 @@
+From 9e4195c78a5042b43c0b3c0ad9b596df849dc50a Mon Sep 17 00:00:00 2001
+From: "H. Vetinari" <h.vetinari@gmx.com>
+Date: Thu, 13 Mar 2025 07:33:54 +1100
+Subject: [PATCH] link zstd statically
+
+---
+ setup_zstd.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/setup_zstd.py b/setup_zstd.py
+index 5aefdd0..963321e 100644
+--- a/setup_zstd.py
++++ b/setup_zstd.py
+@@ -98,7 +98,7 @@ def get_c_extension(
+         else:
+             assert False
+ 
+-    libraries = ["zstd"] if system_zstd else []
++    libraries = ["zstd_static"] if compiler.compiler_type == "msvc" else ["zstd"]
+ 
+     # Python 3.7 doesn't like absolute paths. So normalize to relative.
+     sources = [os.path.relpath(p, root) for p in sources]

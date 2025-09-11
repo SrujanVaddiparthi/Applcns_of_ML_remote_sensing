@@ -1,0 +1,5 @@
+eda
+Using 12 bands of Sentinel-2 satellite over ROC. - sentinel2_rochester.npy
+    - the satellite provides multispectral data across - visible,
+                                                       - near-infrared (NIR)
+                                                       - shortware infrared (SWIR) regions.

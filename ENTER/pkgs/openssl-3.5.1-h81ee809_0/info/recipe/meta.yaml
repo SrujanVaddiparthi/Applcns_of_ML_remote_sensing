@@ -1,0 +1,55 @@
+# This file created by conda-build 25.5.0
+# ------------------------------------------------
+
+package:
+  name: openssl
+  version: 3.5.1
+source:
+  url: https://github.com/openssl/openssl/releases/download/openssl-3.5.1/openssl-3.5.1.tar.gz
+  sha256: 529043b15cffa5f36077a4d0af83f3de399807181d607441d734196d889b641f
+build:
+  run_exports:
+    - openssl >=3.5.1,<4.0a0
+  number: 0
+  string: h81ee809_0
+requirements:
+  build:
+    - clang_bootstrap_osx-arm64 18.1.8 hf1725c4_25
+    - macosx_deployment_target_osx-arm64 11.0 h6553868_2
+    - make 4.4.1 h00291cd_2
+    - perl 5.32.1 7_h10d778d_perl5
+  run:
+    - __osx >=11.0
+    - ca-certificates
+  host:
+    - __osx >=11.0
+test:
+  requires:
+    - pkg-config
+    - ripgrep
+  commands:
+    - touch checksum.txt
+    - $PREFIX/bin/openssl sha256 checksum.txt
+    - pkg-config --print-errors --exact-version "3.5.1" openssl
+    - if [[ "$(pkg-config --variable=prefix openssl)" == "" ]]; then exit 1; fi
+about:
+  home: https://www.openssl.org/
+  license_file: LICENSE.txt
+  license: Apache-2.0
+  license_family: Apache
+  summary: OpenSSL is an open-source implementation of the SSL and TLS protocols
+  dev_url: https://github.com/openssl/openssl
+  doc_url: https://docs.openssl.org/master/
+extra:
+  recipe-maintainers:
+    - h-vetinari
+    - jakirkham
+    - msarahan
+    - ocefpaf
+    - pelson
+  feedstock-name: openssl
+  final: true
+  copy_test_source_files: true
+  flow_run_id: azure_20250701.2.1
+  remote_url: https://github.com/conda-forge/openssl-feedstock
+  sha: 621e42b4a4d74986b958e22a25635e6497d57663

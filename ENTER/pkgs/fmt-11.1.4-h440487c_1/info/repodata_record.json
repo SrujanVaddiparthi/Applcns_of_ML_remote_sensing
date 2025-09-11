@@ -1,0 +1,22 @@
+{
+    "arch": "arm64",
+    "build": "h440487c_1",
+    "build_number": 1,
+    "channel": "https://conda.anaconda.org/conda-forge",
+    "depends": [
+        "__osx >=11.0",
+        "libcxx >=18"
+    ],
+    "fn": "fmt-11.1.4-h440487c_1.conda",
+    "license": "MIT",
+    "license_family": "MIT",
+    "md5": "f957ef7cf1dda0c27acdfbeff72ddb84",
+    "name": "fmt",
+    "platform": "osx",
+    "sha256": "39249dc4021742f1a126ad0efc39904fe058c89fdf43240f39316d34f948f3f1",
+    "size": 178005,
+    "subdir": "osx-arm64",
+    "timestamp": 1742833557859,
+    "url": "https://conda.anaconda.org/conda-forge/osx-arm64/fmt-11.1.4-h440487c_1.conda",
+    "version": "11.1.4"
+}

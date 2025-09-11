@@ -1,0 +1,11 @@
+prefix=/Users/wangtiles/Applcns_of_ML_remote_sensing/ENTER
+exec_prefix=${prefix}
+includedir=/Users/wangtiles/Applcns_of_ML_remote_sensing/ENTER/include
+libdir=/Users/wangtiles/Applcns_of_ML_remote_sensing/ENTER/lib
+
+Name: Yaml-cpp
+Description: A YAML parser and emitter for C++
+Version: 0.8.0
+Requires:
+Libs: -L${libdir} -lyaml-cpp
+Cflags: -I${includedir}

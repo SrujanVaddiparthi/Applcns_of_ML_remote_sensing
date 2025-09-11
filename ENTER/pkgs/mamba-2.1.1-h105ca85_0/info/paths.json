@@ -1,0 +1,25 @@
+{
+  "paths": [
+    {
+      "_path": "bin/mamba",
+      "path_type": "hardlink",
+      "sha256": "70ef9f1fe3e2469b3b28540edfe418f1e08923156431523969409ad7137541bb",
+      "size_in_bytes": 1529184
+    },
+    {
+      "_path": "condabin/mamba",
+      "path_type": "softlink",
+      "sha256": "70ef9f1fe3e2469b3b28540edfe418f1e08923156431523969409ad7137541bb",
+      "size_in_bytes": 1529184
+    },
+    {
+      "_path": "etc/profile.d/mamba.sh",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/mamba-split_1746516032751/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho",
+      "sha256": "ac106c09c664309ec41ad27672805ada19b7551f943589b48abdc65363dc2097",
+      "size_in_bytes": 2848
+    }
+  ],
+  "paths_version": 1
+}

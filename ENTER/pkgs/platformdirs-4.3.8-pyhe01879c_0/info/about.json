@@ -1,0 +1,13 @@
+{
+  "channels": [
+    "https://conda.anaconda.org/conda-forge/"
+  ],
+  "extra": {
+    "flow_run_id": "azure_20250508.2.1",
+    "remote_url": "https://github.com/conda-forge/platformdirs-feedstock",
+    "sha": "7863902ca7edacfc6187cb5577e4601cdc6ccc7b"
+  },
+  "home": "https://github.com/tox-dev/platformdirs",
+  "license": "MIT",
+  "summary": "A small Python module for determining appropriate platform-specific dirs, e.g. a \"user data dir\"."
+}

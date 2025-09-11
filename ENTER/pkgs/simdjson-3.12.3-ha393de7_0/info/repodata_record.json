@@ -1,0 +1,22 @@
+{
+    "arch": "arm64",
+    "build": "ha393de7_0",
+    "build_number": 0,
+    "channel": "https://conda.anaconda.org/conda-forge",
+    "depends": [
+        "__osx >=11.0",
+        "libcxx >=18"
+    ],
+    "fn": "simdjson-3.12.3-ha393de7_0.conda",
+    "license": "Apache-2.0",
+    "license_family": "APACHE",
+    "md5": "1e3350c8f56d5bc5c8ba2917f4a1e212",
+    "name": "simdjson",
+    "platform": "osx",
+    "sha256": "73d5dbf349d9c84b3be224b1ebabbef51d8c4c1bc34e9b4e6a5f6902a5cb1fb8",
+    "size": 208227,
+    "subdir": "osx-arm64",
+    "timestamp": 1743696308441,
+    "url": "https://conda.anaconda.org/conda-forge/osx-arm64/simdjson-3.12.3-ha393de7_0.conda",
+    "version": "3.12.3"
+}
