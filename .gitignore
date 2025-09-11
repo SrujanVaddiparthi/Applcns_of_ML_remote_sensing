@@ -1,20 +1,17 @@
-# macOS system files
+cat > .gitignore << 'EOF'
+# macOS
 .DS_Store
 __MACOSX/
 ENTER/
 
-# Python / PyCharm
-*.pyc
-__pycache__/
-*.pyo
-*.pyd
-*.pdb
-*.egg-info/
+# IDE
 .idea/
-*.iml
 .vscode/
 
-# Virtual environments
-venv/
-.env/
-.venv/
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+EOF

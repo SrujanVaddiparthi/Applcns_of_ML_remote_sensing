@@ -1,8 +1,0 @@
-libdir=/Users/wangtiles/Applcns_of_ML_remote_sensing/ENTER/lib
-includedir=/Users/wangtiles/Applcns_of_ML_remote_sensing/ENTER/include
-
-Name: libsolv
-Description: Library for solving packages
-Version: 0.7.34
-Libs: -L${libdir} -lsolv
-Cflags: -I${includedir}

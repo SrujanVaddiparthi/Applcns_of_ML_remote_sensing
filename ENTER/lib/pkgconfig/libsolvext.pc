@@ -1,9 +1,0 @@
-libdir=/Users/wangtiles/Applcns_of_ML_remote_sensing/ENTER/lib
-includedir=/Users/wangtiles/Applcns_of_ML_remote_sensing/ENTER/include
-
-Name: libsolvext
-Description: Library for reading repositories
-Version: 0.7.34
-Requires: libsolv
-Libs: -L${libdir} -lsolvext
-Cflags: -I${includedir}
