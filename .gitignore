@@ -1,0 +1,20 @@
+# macOS system files
+.DS_Store
+__MACOSX/
+ENTER/
+
+# Python / PyCharm
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+.idea/
+*.iml
+.vscode/
+
+# Virtual environments
+venv/
+.env/
+.venv/
