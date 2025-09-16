@@ -3,3 +3,53 @@ Using 12 bands of Sentinel-2 satellite over ROC. - sentinel2_rochester.npy
     - the satellite provides multispectral data across - visible,
                                                        - near-infrared (NIR)
                                                        - shortware infrared (SWIR) regions.
+https://gisgeography.com/sentinel-2-bands-combinations/
+https://gisgeography.com/remote-sensing-applications/v
+Problem 1:
+    Goal: plot_band(args)
+    # plot each of the 12 bands separately - ensure that I identify what each band corresponds to in terms of its wavelength.
+    # What is my approach to a proper visualization in terms of stretching? Implement it in my visualization.
+    # how would i consider part of the image which has no data? --> I got the hint from the class, replace it with NaN and ignore the NaNs while theorising how to properly visualize it.
+    # but best to research how such kind of visualization is usually done.
+
+Each pixel has got 12 values: 12 bands. And the .npy file itself does not carry band names, it only stores those pixel numbers, simple.
+Okay wait:
+"Plotting bands":
+    1 to 12 bands. Different colors.
+    For Visible "True" color it should be a combo of B4 B3 B2 (RGB).
+    similarly make up other combos, like how prof did during class, lets just google that.
+    ohhhhhhhhhhhhhh
+    found it in that website, okay:
+        1. Normal color B4 B3 B2
+        2. Color Infrared (B8, B4, B3): healthy or unhealthy vegetation. Near infrared B8 band good at reflecting chlorophyll. Hence denser veg => red. But urban areas are white.
+        3. Short-Wave Infrared (B12, B8A, B4): shortwave-infrared regions (SWIR) B12, Near infrared regions (NIR) B8, red B4.
+        Okay wait.....how do i do all this though, am I supposed to get this intuitively or can i just imitate and learn whatevers in the website. 1 and 2 make good sense, rest all a bit hard to understand.
+        But write them anyway:
+        4. Agriculture (B11, B8, B2): SWIR-1 B11, NIR B8, blue B2. Used to monitor health of crops using SWIR and NIR. Both these bands are good at highlighting dense veg appearing as dark green.
+        5. Geology (B12, B11, B2): SWIR NIR and Blue. Good for finding geological features. Faults, lithology, geological formations.
+        6. Bathymetric (B4, B3, B1): great for coastal studies. Red, Green, Coastal band B1. Coastal aerosol band is good for estimating suspended sediment in water.
+        7. Vegetation Index (B8-B4)/(B8+B4): NIR -> veg strongly reflects, Red -> veg strongly absorbs. Veg index good for quantifying amount of vegetation = normalized difference vegetation index.
+                                            High values = dense canopy, low or negative values urban or water features.
+        8. Moisture Index (B8A-B11)/(B8A+B11): ideal for finding water stress in plants. SWIR & NIR to generate an index of moisture content.
+                                             High values = wetter vegetation, and low values means plants under stress due to insufficient moisture.
+
+    Q. How to know which band is which?
+        same website above. Central wavelength is what is mentioned for every Band.
+            Band	Resolution	Central Wavelength	Description
+            B1	60 m	443 nm	Ultra Blue (Coastal and Aerosol)
+            B2	10 m	490 nm	Blue
+            B3	10 m	560 nm	Green
+            B4	10 m	665 nm	Red
+            B5	20 m	705 nm	Visible and Near Infrared (VNIR)
+            B6	20 m	740 nm	Visible and Near Infrared (VNIR)
+            B7	20 m	783 nm	Visible and Near Infrared (VNIR)
+            B8	10 m	842 nm	Visible and Near Infrared (VNIR)
+            B8a	20 m	865 nm	Visible and Near Infrared (VNIR)
+            B9	60 m	940 nm	Short Wave Infrared (SWIR)
+            B10	60 m	1375 nm	Short Wave Infrared (SWIR)
+            B11	20 m	1610 nm	Short Wave Infrared (SWIR)
+            B12	20 m	2190 nm	Short Wave Infrared (SWIR)
+Okay I am unable to understand how to identify which is which from the 12 sentinel 2 bands. I will just follow the ones above in order of bands. Skipping B10 since its missing as mentioned in the email.
+Okay so Sentinel 2 has got 13 MS bands.
+
+

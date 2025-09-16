@@ -1,0 +1,8 @@
+vegetation.tree.quercus.lobata.vswir.vh090.ucsb.asd.spectrum.txt 
+
+vegetation.tree.quercus.lobata.vswir.vh090.ucsb.asd.ancillary.txt 
+
+manmade.road.pavingasphalt.solid.all.0095uuuasp.jhu.becknic.spectrum.txt 
+
+Manifest.txt 
+
