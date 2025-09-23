@@ -15,3 +15,8 @@ __pycache__/
 *.pyd
 *.egg-info/
 EOF
+ml/*.npy
+ml/*.tiff
+ml/*.hdr
+ml/tait_labsphere
+*.zip
