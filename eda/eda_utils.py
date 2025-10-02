@@ -188,35 +188,97 @@ def show_band_vs_z(img: np.ndarray,
     plt.tight_layout()
     plt.show()
 
-
-def correlation_matrix(img: np.ndarray, band_labels: list[str]) -> np.ndarray:
-    x = img.reshape(-1, img.shape[-1]) #convert 3d to 2d or flatten it to 2d
+def correlation_matrix(img: np.ndarray,
+                       band_labels: list[str] | np.ndarray | None,
+                       text_label: bool,
+                       label_each_band: bool,
+                       yes_show: bool,
+                       cmocean: str) -> np.ndarray:
+    # flatten to 2D and drop rows with nans
+    x = img.reshape(-1, img.shape[-1])
     drop_nans = np.all(np.isfinite(x), axis=1)
-    x_no_nans = x[drop_nans] #dropped the nans
-    corr = np.corrcoef(x_no_nans,rowvar=False) #
-    plt.figure(figsize=(12,12))
-    corr_plt = plt.imshow(corr, vmin=-1, vmax=1, cmap=cmo.cm.ice)
-    plt.colorbar(corr_plt, label="pearson_r")
+    x_no_nans = x[drop_nans]
+
+    # pearson correlation across pixels (bands as variables)
+    corr = np.corrcoef(x_no_nans, rowvar=False)
+
+    # colormap by name ( "ice", "thermal")
+    cmap = getattr(cmo.cm, cmocean)
+
+    # plot
+    plt.figure(figsize=(12, 12))
+    im = plt.imshow(corr, vmin=-1, vmax=1, cmap=cmap)
+    plt.colorbar(im, label="pearson_r")
 
     b = corr.shape[0]
-    if band_labels is not None:
-        plt.xticks(range(b), band_labels, rotation=80, fontsize=8)
-        plt.yticks(range(b), band_labels, fontsize=8)
-    else:
-        plt.xticks(range(b))
-        plt.yticks(range(b))
 
-    for i in range(b):
-        for j in range(b):
-            plt.text(j, i, f"{corr[i, j]:.2f}",
-                     horizontalalignment="center",
-                     verticalalignment="center",
-                     color="black" if abs(corr[i, j]) < 0.50 else "yellow",
-                     fontsize=8 if abs(corr[i, j]) < 0.50 else 12)
+    # labels on axes
+    if label_each_band:
+        if band_labels is not None:
+            lab = np.asarray(band_labels)
+            # pretty-print numeric wavelengths
+            if np.issubdtype(lab.dtype, np.number):
+                lab = [f"{float(v):.0f}" for v in lab]
+            else:
+                lab = [str(v) for v in lab]
+            plt.xticks(range(b), lab, rotation=80, fontsize=8)
+            plt.yticks(range(b), lab, fontsize=8)
+        else:
+            plt.xticks(range(b))
+            plt.yticks(range(b))
+    else:
+        plt.xticks([]); plt.yticks([])
+
+    # optional per-cell text (r values)
+    if text_label:
+        for i in range(b):
+            for j in range(b):
+                val = corr[i, j]
+                plt.text(j, i, f"{val:.2f}",
+                         ha="center", va="center",
+                         color="black" if abs(val) < 0.50 else "yellow",
+                         fontsize=8 if abs(val) < 0.50 else 12)
+
     plt.title("band-band_correlation_matrix")
     plt.tight_layout()
-    plt.show()
+    if yes_show is True:
+        plt.show()
+    # plt.show()
     return corr
+
+#
+# def correlation_matrix(img: np.ndarray,
+#                        band_labels: list[str],
+#                        text_label: bool,
+#                        label_each_band: bool,
+#                        cmocean: str ) -> np.ndarray:
+#     x = img.reshape(-1, img.shape[-1]) #convert 3d to 2d or flatten it to 2d
+#     drop_nans = np.all(np.isfinite(x), axis=1)
+#     x_no_nans = x[drop_nans] #dropped the nans
+#     corr = np.corrcoef(x_no_nans,rowvar=False) #
+#     plt.figure(figsize=(12,12))
+#     corr_plt = plt.imshow(corr, vmin=-1, vmax=1, cmap=cmo.cm.cmocean)
+#     plt.colorbar(corr_plt, label="pearson_r")
+#     b = corr.shape[0]
+#     if label_each_band:
+#         if band_labels is not None:
+#             plt.xticks(range(b), band_labels, rotation=80, fontsize=8)
+#             plt.yticks(range(b), band_labels, fontsize=8)
+#         else:
+#             plt.xticks(range(b))
+#             plt.yticks(range(b))
+#     if text_label:
+#         for i in range(b):
+#             for j in range(b):
+#                 plt.text(j, i, f"{corr[i, j]:.2f}",
+#                          horizontalalignment="center",
+#                          verticalalignment="center",
+#                          color="black" if abs(corr[i, j]) < 0.50 else "yellow",
+#                          fontsize=8 if abs(corr[i, j]) < 0.50 else 12)
+#     plt.title("band-band_correlation_matrix")
+#     plt.tight_layout()
+#     plt.show()
+#     return corr
 
 def correlation_plot(img: np.ndarray,
                      band_indices: list[int],
